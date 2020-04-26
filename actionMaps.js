@@ -20,26 +20,28 @@ socket.on('connected', function (data) {
 
     socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
     // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
-    //  socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
-
+    // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
     socket.on('mapActionResult', result => {
         console.log(JSON.stringify(result, null, 2))
-        if (result.data.mapServerId && result.status === "ACK" && mapHasCampaigns) { //Map has campaigns to be sended, the FIN will include them
-            setTimeout(sendFinPiggy, 5000) //Wait 5 secs and send piggybacked FIN
-        } else if (result.data.mapServerId && result.status === "ACK" && !mapHasCampaigns) { //Map doesn't have campaigns, FIN only informs
-            setTimeout(sendFin, 5000) //Wait 5 secs and send FIN
+        if (result.type === "OUTDATED") { // Map outdated on a client UPDATE attempt
+            // Update ADB with server attrs
         } else if ((result.type === "UPDATED" || "DELETED") && result.status === "ACK") { // Result is a DEL/UPDATE completed 
-            setTimeout(sendFin, 5000)
-            //CLIENT LOGIC RELATED TO AN UPDATE or DELETE
+            setTimeout(sendFin, 5000) //Wait 5 secs and send FIN
+            // DEL/UPD client logic
+        } else if (result.data.mapServerId && result.status === "ACK" && mapHasCampaigns) { // Map has campaigns to be sended, the FIN will include them
+            setTimeout(sendFinPiggy, 5000) //Wait 5 secs and send piggybacked FIN
+        } else if (result.data.mapServerId && result.status === "ACK" && !mapHasCampaigns) { // Map doesn't have campaigns, FIN only informs
+            setTimeout(sendFin, 5000) //Wait 5 secs and send FIN
         } else {
             console.log('ROLLBACK') //Rollback client transaction
         }
     })
 
-    function sendFin() {
+    function sendFin(tid) {
         socket.emit('clientFin',
             {
-                mapIdRecievedByClient: true,
+                tid: tid,
+                status: 'FIN',
                 actions: null,
             }
         )
@@ -49,7 +51,8 @@ socket.on('connected', function (data) {
     function sendFinPiggy() {
         socket.emit('clientFin',
             {
-                mapIdRecievedByClient: true,
+                tid: 'TID',
+                status: 'FIN',
                 actions: campaignSubmitJSON // NOT SIMPLY AS THIS. MUST ADD CLIENT LOGIC TO PUT MAPSERVERIDS HERE
             }
         )

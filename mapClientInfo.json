@@ -1,0 +1,23 @@
+[
+    {
+        "tid": 456315879,
+        "type": "INFO",
+        "data": [
+            {
+                "mapServerId": "Jfd8aa7e6ca38f1813bf038c56a48c025d14e91a9da098ffe202cc1e4f17091a",
+                "mapClientId": 1,
+                "version": 20210404175028.79
+            },
+            {
+                "mapServerId": "JDd8aa7e6ca38f1813bf038c56a48c025d14e91a9da098ffe202cc1e4f17091a",
+                "mapClientId": 2,
+                "version": 20210404175028.79
+            },
+            {
+                "mapServerId": "89968bfea722b0e0c3bb0237366644a88e5b1a802940f6e70d501fa31aaf5c5a",
+                "mapClientId": 3,
+                "version": 20120404175028.79
+            }
+        ]
+    }
+]

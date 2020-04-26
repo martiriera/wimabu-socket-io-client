@@ -28,7 +28,8 @@ socket.on('connected', (data) => {
     function sendFin() {
         socket.emit('clientFin',
             {
-                mapIdRecievedByClient: true,
+                tid: 'TID',
+                status: 'FIN',
                 actions: null,
             }
         )

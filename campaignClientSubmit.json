@@ -8,11 +8,11 @@
             "angle": 10,
             "initDate": "2020-03-28T19:25:10.713Z",
             "endDate": "2020-04-28T20:25:10.713Z",
-            "numOfSamples": 1,
+            "numOfSamples": 4,
             "timeBetweenSamples": 0.1,
-            "numOfBatches": 1,
+            "numOfBatches": 2,
             "timeBetweenBatches": 0.1,
-            "mapServerId": "e988b41546b0e6eda5b73dec305902f9225e82496adf6a3befdbea526e6fca7a",
+            "mapServerId": "e2234dc63173b757e3bc2cbb7049fb3bd2de4205203205ec85d2c78ef61010ec",
             "coordinateData": {
                 "x": 40,
                 "y": 40,
@@ -28,13 +28,23 @@
                             "value": 1,
                             "error": 0.1,
                             "sampleNumber": 1,
-                            "dateInMillis": 1586706900419
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "AAAA",
+                                "l2address": "aaaa",
+                                "technology": "techA"
+                            }
                         },
                         {
                             "value": 2,
                             "error": 0.2,
                             "sampleNumber": 2,
-                            "dateInMillis": 1586706900419
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "AAAA",
+                                "l2address": "aaaa",
+                                "technology": "techA"
+                            }
                         }
                     ]
                 },
@@ -44,14 +54,24 @@
                         {
                             "value": 3,
                             "error": 0.3,
-                            "sampleNumber": 3,
-                            "dateInMillis": 1586706900419
+                            "sampleNumber": 1,
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "AAAA",
+                                "l2address": "aaaa",
+                                "technology": "techA"
+                            }
                         },
                         {
-                            "value": 3,
-                            "error": 0.3,
-                            "sampleNumber": 3,
-                            "dateInMillis": 1586706900419
+                            "value": 4,
+                            "error": 0.4,
+                            "sampleNumber": 2,
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "BBBB",
+                                "l2address": "bbbb",
+                                "technology": "techB"
+                            }
                         }
                     ]
                 }
@@ -67,11 +87,11 @@
             "angle": 20,
             "initDate": "2020-03-28T19:25:10.713Z",
             "endDate": "2020-04-28T20:25:10.713Z",
-            "numOfSamples": 2,
+            "numOfSamples": 4,
             "timeBetweenSamples": 0.2,
             "numOfBatches": 2,
             "timeBetweenBatches": 0.2,
-            "mapServerId": "e988b41546b0e6eda5b73dec305902f9225e82496adf6a3befdbea526e6fca7a",
+            "mapServerId": "e2234dc63173b757e3bc2cbb7049fb3bd2de4205203205ec85d2c78ef61010ec",
             "coordinateData": {
                 "x": 4,
                 "y": 4,
@@ -84,16 +104,26 @@
                     "batchNumber": 1,
                     "batchSamples": [
                         {
-                            "value": 1,
-                            "error": 0.1,
+                            "value": 5,
+                            "error": 0.5,
                             "sampleNumber": 1,
-                            "dateInMillis": 1586706900419
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "CCCC",
+                                "l2address": "cccc",
+                                "technology": "techC"
+                            }
                         },
                         {
-                            "value": 2,
-                            "error": 0.2,
+                            "value": 6,
+                            "error": 0.6,
                             "sampleNumber": 2,
-                            "dateInMillis": 1586706900419
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "CCCC",
+                                "l2address": "cccc",
+                                "technology": "techC"
+                            }
                         }
                     ]
                 },
@@ -101,16 +131,26 @@
                     "batchNumber": 2,
                     "batchSamples": [
                         {
-                            "value": 3,
-                            "error": 0.3,
-                            "sampleNumber": 3,
-                            "dateInMillis": 1586706900419
+                            "value": 7,
+                            "error": 0.7,
+                            "sampleNumber": 1,
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "ZZZZ",
+                                "l2address": "zzzz",
+                                "technology": "techZ"
+                            }
                         },
                         {
-                            "value": 3,
-                            "error": 0.3,
-                            "sampleNumber": 3,
-                            "dateInMillis": 1586706900419
+                            "value": 8,
+                            "error": 0.8,
+                            "sampleNumber": 2,
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "YYYY",
+                                "l2address": "yyyy",
+                                "technology": "techY"
+                            }
                         }
                     ]
                 }
@@ -128,9 +168,9 @@
             "endDate": "2020-04-28T20:25:10.713Z",
             "numOfSamples": 3,
             "timeBetweenSamples": 0.3,
-            "numOfBatches": 3,
+            "numOfBatches": 2,
             "timeBetweenBatches": 0.3,
-            "mapServerId": "e988b41546b0e6eda5b73dec305902f9225e82496adf6a3befdbea526e6fca7a",
+            "mapServerId": "e2234dc63173b757e3bc2cbb7049fb3bd2de4205203205ec85d2c78ef61010ec",
             "coordinateData": {
                 "x": 5,
                 "y": 5,
@@ -143,16 +183,15 @@
                     "batchNumber": 1,
                     "batchSamples": [
                         {
-                            "value": 4,
-                            "error": 0.4,
-                            "sampleNumber": 4,
-                            "dateInMillis": 1586706900419
-                        },
-                        {
-                            "value": 5,
-                            "error": 0.5,
-                            "sampleNumber": 5,
-                            "dateInMillis": 1586706900419
+                            "value": 10,
+                            "error": 0.10,
+                            "sampleNumber": 2,
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "EEEE",
+                                "l2address": "eeee",
+                                "technology": "techA"
+                            }
                         }
                     ]
                 },
@@ -160,16 +199,26 @@
                     "batchNumber": 2,
                     "batchSamples": [
                         {
-                            "value": 6,
-                            "error": 0.6,
-                            "sampleNumber": 6,
-                            "dateInMillis": 1586706900419
+                            "value": 11,
+                            "error": 0.11,
+                            "sampleNumber": 1,
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "FFFF",
+                                "l2address": "ffff",
+                                "technology": "techF"
+                            }
                         },
                         {
-                            "value": 6,
-                            "error": 0.6,
-                            "sampleNumber": 6,
-                            "dateInMillis": 1586706900419
+                            "value": 12,
+                            "error": 0.12,
+                            "sampleNumber": 2,
+                            "dateInMillis": 1586706900419,
+                            "sampleBS": {
+                                "networkAddress": "FFFF",
+                                "l2address": "ffff",
+                                "technology": "techF"
+                            }
                         }
                     ]
                 }
