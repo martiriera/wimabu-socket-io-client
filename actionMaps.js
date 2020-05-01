@@ -25,7 +25,7 @@ socket.on('connected', function (data) {
         console.log(JSON.stringify(result, null, 2))
         if (result.type === "OUTDATED") { // Map outdated on a client UPDATE attempt
             // Update ADB with server attrs
-        } else if ((result.type === "UPDATED" || "DELETED") && result.status === "ACK") { // Result is a DEL/UPDATE completed 
+        } else if (result.type && result.status === "ACK") { // Result is a DEL/UPDATE completed 
             setTimeout(sendFin, 5000) //Wait 5 secs and send FIN
             // DEL/UPD client logic
         } else if (result.data.mapServerId && result.status === "ACK" && mapHasCampaigns) { // Map has campaigns to be sended, the FIN will include them

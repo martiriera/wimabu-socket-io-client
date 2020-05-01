@@ -1,101 +1,101 @@
-[	
-	{
-		"tid": "123456789",
-		"type": "ADD",
-		"data": {
-	        "mapServerId": null,
-	        "mapClientId": 1,
-	        "mapName": "Barça",
-	        "buildingName": "Camp Nou",
-	        "floorNumber": 1,
-	        "mapImagePath": "/fcb",
-	        "refCoordinateId1": null,
-	        "refCoordinateId2": null,
-	        "mapCoordinates": [
-	            {
-	                "x": 1,
-	                "y": 1,
-	                "z": 1,
-	                "pixelX": 0.1,
-	                "pixelY": 0.1,
-	                "mapServerId": null
-	            },
-	            {
-	                "x": 2,
-	                "y": 2,
-	                "z": 2,
-	                "pixelX": 0.2,
-	                "pixelY": 0.2,
-	                "mapServerId": null
-	            }
-	        ]
-    	}
-    
-    },
-	
-	{
-		"tid": "987654321",
-		"type": "ADD",
-		"data": {
-	        "mapServerId": null,
-	        "mapClientId": 2,
-	        "mapName": "Madrid",
-	        "buildingName": "Santiago Bernabeu",
-	        "floorNumber": 2,
-	        "mapImagePath": "/mad",
-	        "refCoordinateId1": null,
-	        "refCoordinateId2": null,
-	        "mapCoordinates": [
-	            {
-	                "x": 3,
-	                "y": 3,
-	                "z": 3,
-	                "pixelX": 0.3,
-	                "pixelY": 0.3,
-	                "mapServerId": null
-	            },
-	            {
-	                "x": 4,
-	                "y": 4,
-	                "z": 4,
-	                "pixelX": 0.4,
-	                "pixelY": 0.4,
-	                "mapServerId": null
-	            }
-	        ]
-    	}
-	},
-
-	{
-		"tid": "468585697",
-		"type": "ADD",
-		"data": {
-	        "mapServerId": null,
-	        "mapClientId": 3,
-	        "mapName": "Liverpool",
-	        "buildingName": "Anfield",
-	        "floorNumber": 5,
-	        "mapImagePath": "/lvp",
-	        "refCoordinateId1": null,
-	        "refCoordinateId2": null,
-	        "mapCoordinates": [
-	            {
-	                "x": 5,
-	                "y": 5,
-	                "z": 5,
-	                "pixelX": 0.5,
-	                "pixelY": 0.5,
-	                "mapServerId": null
-	            },
-	            {
-	                "x": 6,
-	                "y": 6,
-	                "z": 6,
-	                "pixelX": 0.6,
-	                "pixelY": 0.6,
-	                "mapServerId": null
-	            }
-	        ]
-    	}
-	}
-]
+{
+	"syncModeIsUnidirectional": false,
+	"actions": [
+		{
+			"tid": "123456789",
+			"type": "ADD",
+			"data": {
+				"mapServerId": null,
+				"mapClientId": 1,
+				"mapName": "Barça",
+				"buildingName": "Camp Nou",
+				"floorNumber": 1,
+				"mapImagePath": "/fcb",
+				"refCoordinateId1": null,
+				"refCoordinateId2": null,
+				"mapCoordinates": [
+					{
+						"x": 1,
+						"y": 1,
+						"z": 1,
+						"pixelX": 0.1,
+						"pixelY": 0.1,
+						"mapServerId": null
+					},
+					{
+						"x": 2,
+						"y": 2,
+						"z": 2,
+						"pixelX": 0.2,
+						"pixelY": 0.2,
+						"mapServerId": null
+					}
+				]
+			}
+		},
+		{
+			"tid": "987654321",
+			"type": "ADD",
+			"data": {
+				"mapServerId": null,
+				"mapClientId": 2,
+				"mapName": "Madrid",
+				"buildingName": "Santiago Bernabeu",
+				"floorNumber": 2,
+				"mapImagePath": "/mad",
+				"refCoordinateId1": null,
+				"refCoordinateId2": null,
+				"mapCoordinates": [
+					{
+						"x": 3,
+						"y": 3,
+						"z": 3,
+						"pixelX": 0.3,
+						"pixelY": 0.3,
+						"mapServerId": null
+					},
+					{
+						"x": 4,
+						"y": 4,
+						"z": 4,
+						"pixelX": 0.4,
+						"pixelY": 0.4,
+						"mapServerId": null
+					}
+				]
+			}
+		},
+		{
+			"tid": "468585697",
+			"type": "ADD",
+			"data": {
+				"mapServerId": null,
+				"mapClientId": 3,
+				"mapName": "Liverpool",
+				"buildingName": "Anfield",
+				"floorNumber": 5,
+				"mapImagePath": "/lvp",
+				"refCoordinateId1": null,
+				"refCoordinateId2": null,
+				"mapCoordinates": [
+					{
+						"x": 5,
+						"y": 5,
+						"z": 5,
+						"pixelX": 0.5,
+						"pixelY": 0.5,
+						"mapServerId": null
+					},
+					{
+						"x": 6,
+						"y": 6,
+						"z": 6,
+						"pixelX": 0.6,
+						"pixelY": 0.6,
+						"mapServerId": null
+					}
+				]
+			}
+		}
+	]
+}

@@ -12,7 +12,7 @@
             "timeBetweenSamples": 0.1,
             "numOfBatches": 2,
             "timeBetweenBatches": 0.1,
-            "mapServerId": "e2234dc63173b757e3bc2cbb7049fb3bd2de4205203205ec85d2c78ef61010ec",
+            "mapServerId": "d68900bbc94da1cd8694389813358ae806d884e4eefce3fe5529b0fdbedfed85",
             "coordinateData": {
                 "x": 40,
                 "y": 40,
@@ -91,7 +91,7 @@
             "timeBetweenSamples": 0.2,
             "numOfBatches": 2,
             "timeBetweenBatches": 0.2,
-            "mapServerId": "e2234dc63173b757e3bc2cbb7049fb3bd2de4205203205ec85d2c78ef61010ec",
+            "mapServerId": "d68900bbc94da1cd8694389813358ae806d884e4eefce3fe5529b0fdbedfed85",
             "coordinateData": {
                 "x": 4,
                 "y": 4,
@@ -170,7 +170,7 @@
             "timeBetweenSamples": 0.3,
             "numOfBatches": 2,
             "timeBetweenBatches": 0.3,
-            "mapServerId": "e2234dc63173b757e3bc2cbb7049fb3bd2de4205203205ec85d2c78ef61010ec",
+            "mapServerId": "2fceebd07200269c863729fca6afc3d7588d447c08393df14a16edb2aa9ee6e3",
             "coordinateData": {
                 "x": 5,
                 "y": 5,
