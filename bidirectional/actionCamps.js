@@ -28,7 +28,7 @@ socket.on('connected', (data) => {
     function sendFin() {
         socket.emit('clientFin',
             {
-                tid: 'TID',
+                clientTID: 'TID',
                 status: 'FIN',
                 actions: null,
             }

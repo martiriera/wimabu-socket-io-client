@@ -1,0 +1,32 @@
+{
+    "clientTID":"xxx",
+    "type":"ADD",
+    "data": {
+        "mapServerId": "78781fbad2e74a65282d8f2ce51c615b43442784e496c14bb2be4aed482bdd9b",
+        "mapClientId": 6,
+        "mapName": "UNIDIRECTIONAL",
+        "buildingName": "FORCED",
+        "floorNumber": 1,
+        "mapImagePath": "/aaa",
+        "refCoordinateId1": null,
+        "refCoordinateId2": null,
+        "mapCoordinates": [
+            {
+                "x": 2,
+                "y": 4,
+                "z": 5,
+                "pixelX": 0.1,
+                "pixelY": 0.1,
+                "mapServerId": null
+            },
+            {
+                "x": 6,
+                "y": 7,
+                "z": 7,
+                "pixelX": 0.2,
+                "pixelY": 0.2,
+                "mapServerId": null
+            }
+        ]
+    }
+}

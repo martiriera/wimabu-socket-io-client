@@ -1,6 +1,6 @@
 [
     {
-        "tid": "111111111",
+        "clientTID": "111111111",
         "type": "ADD",
         "data": {
             "dataCollectionCampaignServerId": null,
@@ -79,7 +79,7 @@
         }
     },
     {
-        "tid": "222222222",
+        "clientTID": "222222222",
         "type": "ADD",
         "data": {
             "dataCollectionCampaignServerId": null,
@@ -158,7 +158,7 @@
         }
     },
     {
-        "tid": "333333333",
+        "clientTID": "333333333",
         "type": "ADD",
         "data": {
             "dataCollectionCampaignServerId": null,

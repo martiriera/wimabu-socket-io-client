@@ -1,10 +1,11 @@
 // JavaScript socket.io code
 
 var io = require("socket.io-client");
-var mapSubmitJSON = require("./mapClientSubmit.json");
-var campaignSubmitJSON = require("./campaignClientSubmit.json");
-var mapUpdateJSON = require("./mapClientUpdate.json")
-var mapDeleteJSON = require("./mapClientDelete.json")
+var mapSubmitJSON = require("./mapClientSubmitUNI.json");
+// var campaignSubmitJSON = require("./campaignClientSubmitUNI.json");
+var mapUpdateJSON = require("./mapClientUpdateUNI.json")
+var mapDeleteJSON = require("./mapClientDeleteUNI.json")
+var forceAddJSON = require("./mapForceAdd.json")
 
 
 console.log('Starting connection...');
@@ -18,13 +19,17 @@ socket.on('connected', function (data) {
     console.log(data);
     setTimeout(() => socket.emit('disconnect'), 30000) //Disconnect from socket in X millis
 
-    socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
-    // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
+    // socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
+    socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
     // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
     socket.on('mapActionResult', result => {
         console.log(JSON.stringify(result, null, 2))
         if (result.type === "OUTDATED") { // Map outdated on a client UPDATE attempt
-            // Update ADB with server attrs
+            sendForceUpdate();
+            // socket.emit('abort');
+        } else if (result.type === "MISSING") {
+            sendForceAdd();
+            // socket.emit('abort');
         } else if (result.type && result.status === "ACK") { // Result is a DEL/UPDATE completed 
             setTimeout(sendFin, 5000) //Wait 5 secs and send FIN
             // DEL/UPD client logic
@@ -37,10 +42,10 @@ socket.on('connected', function (data) {
         }
     })
 
-    function sendFin(tid) {
+    function sendFin(clientTID) {
         socket.emit('clientFin',
             {
-                tid: tid,
+                clientTID: clientTID,
                 status: 'FIN',
                 actions: null,
             }
@@ -51,13 +56,23 @@ socket.on('connected', function (data) {
     function sendFinPiggy() {
         socket.emit('clientFin',
             {
-                tid: 'TID',
+                clientTID: 'TID',
                 status: 'FIN',
                 actions: campaignSubmitJSON // NOT SIMPLY AS THIS. MUST ADD CLIENT LOGIC TO PUT MAPSERVERIDS HERE
             }
         )
         console.log(`FIN with campaigns sent`)
 
+    }
+
+    function sendForceAdd() {
+        socket.emit('forceAdd', forceAddJSON);
+        console.log(`Force ADD Sent`)
+    }
+
+    function sendForceUpdate() {
+        socket.emit('forceUpdate');
+        console.log(`Force UPDATE Sent`)
     }
 
 });

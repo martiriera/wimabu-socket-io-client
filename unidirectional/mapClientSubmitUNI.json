@@ -1,0 +1,65 @@
+{
+	"syncModeIsUnidirectional": true,
+	"actions": [
+		{
+			"clientTID": "123456789",
+			"type": "ADD",
+			"data": {
+				"mapServerId": null,
+				"mapClientId": 1,
+				"mapName": "Chelsea",
+				"buildingName": "Stamford Bridge",
+				"floorNumber": 1,
+				"mapImagePath": "/che",
+				"mapCoordinates": [
+					{
+						"x": 9,
+						"y": 9,
+						"z": 9,
+						"pixelX": 0.1,
+						"pixelY": 0.1,
+						"mapServerId": null
+					},
+					{
+						"x": 7,
+						"y": 7,
+						"z": 7,
+						"pixelX": 0.2,
+						"pixelY": 0.2,
+						"mapServerId": null
+					}
+				]
+			}
+		},
+		{
+			"clientTID": "987654321",
+			"type": "ADD",
+			"data": {
+				"mapServerId": null,
+				"mapClientId": 2,
+				"mapName": "Bayern",
+				"buildingName": "Allianz Arena",
+				"floorNumber": 2,
+				"mapImagePath": "/bay",
+				"mapCoordinates": [
+					{
+						"x": 6,
+						"y": 7,
+						"z": 3,
+						"pixelX": 0.3,
+						"pixelY": 0.3,
+						"mapServerId": null
+					},
+					{
+						"x": 3,
+						"y": 4,
+						"z": 4,
+						"pixelX": 0.4,
+						"pixelY": 0.4,
+						"mapServerId": null
+					}
+				]
+			}
+		}
+	]
+}

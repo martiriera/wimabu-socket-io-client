@@ -2,7 +2,7 @@
 	"syncModeIsUnidirectional": false,
 	"actions": [
 		{
-			"tid": "123456789",
+			"clientTID": "123456789",
 			"type": "ADD",
 			"data": {
 				"mapServerId": null,
@@ -11,8 +11,6 @@
 				"buildingName": "Camp Nou",
 				"floorNumber": 1,
 				"mapImagePath": "/fcb",
-				"refCoordinateId1": null,
-				"refCoordinateId2": null,
 				"mapCoordinates": [
 					{
 						"x": 1,
@@ -34,7 +32,7 @@
 			}
 		},
 		{
-			"tid": "987654321",
+			"clientTID": "987654321",
 			"type": "ADD",
 			"data": {
 				"mapServerId": null,
@@ -43,8 +41,6 @@
 				"buildingName": "Santiago Bernabeu",
 				"floorNumber": 2,
 				"mapImagePath": "/mad",
-				"refCoordinateId1": null,
-				"refCoordinateId2": null,
 				"mapCoordinates": [
 					{
 						"x": 3,
@@ -66,7 +62,7 @@
 			}
 		},
 		{
-			"tid": "468585697",
+			"clientTID": "468585697",
 			"type": "ADD",
 			"data": {
 				"mapServerId": null,
@@ -75,8 +71,6 @@
 				"buildingName": "Anfield",
 				"floorNumber": 5,
 				"mapImagePath": "/lvp",
-				"refCoordinateId1": null,
-				"refCoordinateId2": null,
 				"mapCoordinates": [
 					{
 						"x": 5,
