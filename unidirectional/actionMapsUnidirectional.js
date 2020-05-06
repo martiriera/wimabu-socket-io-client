@@ -1,11 +1,11 @@
 // JavaScript socket.io code
 
 var io = require("socket.io-client");
-var mapSubmitJSON = require("./mapClientSubmitUNI.json");
-// var campaignSubmitJSON = require("./campaignClientSubmitUNI.json");
-var mapUpdateJSON = require("./mapClientUpdateUNI.json")
-var mapDeleteJSON = require("./mapClientDeleteUNI.json")
-var forceAddJSON = require("./mapForceAdd.json")
+var mapSubmitJSON = require("./jsons/mapClientSubmitUNI.json");
+// var campaignSubmitJSON = require("./jsons/campaignClientSubmitUNI.json");
+var mapUpdateJSON = require("./jsons/mapClientUpdateUNI.json")
+var mapDeleteJSON = require("./jsons/mapClientDeleteUNI.json")
+var forceAddJSON = require("./jsons/mapForceAdd.json")
 
 
 console.log('Starting connection...');
@@ -28,8 +28,8 @@ socket.on('connected', function (data) {
             sendForceUpdate();
             // socket.emit('abort');
         } else if (result.type === "MISSING") {
-            sendForceAdd();
-            // socket.emit('abort');
+            // sendForceAdd();
+            socket.emit('abort');
         } else if (result.type && result.status === "ACK") { // Result is a DEL/UPDATE completed 
             setTimeout(sendFin, 5000) //Wait 5 secs and send FIN
             // DEL/UPD client logic

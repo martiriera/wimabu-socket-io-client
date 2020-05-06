@@ -1,10 +1,10 @@
 // JavaScript socket.io code
 
 var io = require("socket.io-client");
-var mapSubmitJSON = require("./mapClientSubmit.json");
-var campaignSubmitJSON = require("./campaignClientSubmit.json");
-var mapUpdateJSON = require("./mapClientUpdate.json")
-var mapDeleteJSON = require("./mapClientDelete.json")
+var mapSubmitJSON = require("./jsons/mapClientSubmit.json");
+var campaignSubmitJSON = require("./jsons/campaignClientSubmit.json");
+var mapUpdateJSON = require("./jsons/mapClientUpdate.json")
+var mapDeleteJSON = require("./jsons/mapClientDelete.json")
 
 
 console.log('Starting connection...');
@@ -18,9 +18,9 @@ socket.on('connected', function (data) {
     console.log(data);
     setTimeout(() => socket.emit('disconnect'), 30000) //Disconnect from socket in X millis
 
-    socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
+    // socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
     // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
-    // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
+    socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
     socket.on('mapActionResult', result => {
         console.log(JSON.stringify(result, null, 2))
         if (result.type === "OUTDATED") { // Map outdated on a client UPDATE attempt

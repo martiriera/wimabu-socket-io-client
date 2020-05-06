@@ -7,7 +7,8 @@
         "mapName": "UNIDIRECTIONAL",
         "buildingName": "FORCED",
         "floorNumber": 1,
-        "mapImagePath": "/aaa",
+        "mapImagePath": "/frcd",
+        "mapOwner":"929096449f66df81a3af39ae2447ccc3c21db0cde80633d074020f011fb8ff38",
         "refCoordinateId1": null,
         "refCoordinateId2": null,
         "mapCoordinates": [

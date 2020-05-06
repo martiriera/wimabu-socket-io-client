@@ -12,7 +12,7 @@
             "timeBetweenSamples": 0.1,
             "numOfBatches": 2,
             "timeBetweenBatches": 0.1,
-            "mapServerId": "d68900bbc94da1cd8694389813358ae806d884e4eefce3fe5529b0fdbedfed85",
+            "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf",
             "coordinateData": {
                 "x": 40,
                 "y": 40,
@@ -91,7 +91,7 @@
             "timeBetweenSamples": 0.2,
             "numOfBatches": 2,
             "timeBetweenBatches": 0.2,
-            "mapServerId": "d68900bbc94da1cd8694389813358ae806d884e4eefce3fe5529b0fdbedfed85",
+            "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf",
             "coordinateData": {
                 "x": 4,
                 "y": 4,
@@ -170,7 +170,7 @@
             "timeBetweenSamples": 0.3,
             "numOfBatches": 2,
             "timeBetweenBatches": 0.3,
-            "mapServerId": "2fceebd07200269c863729fca6afc3d7588d447c08393df14a16edb2aa9ee6e3",
+            "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf",
             "coordinateData": {
                 "x": 5,
                 "y": 5,
@@ -188,8 +188,8 @@
                             "sampleNumber": 2,
                             "dateInMillis": 1586706900419,
                             "sampleBS": {
-                                "networkAddress": "EEEE",
-                                "l2address": "eeee",
+                                "networkAddress": "AAAA",
+                                "l2address": "aaaa",
                                 "technology": "techA"
                             }
                         }

@@ -1,0 +1,27 @@
+{
+    "owner":"327b467929a721eed3959a6474b61ca13655036c018cab49cb72b2b586bfd155",
+    "syncModeIsUnidirectional": false,
+    "actions": [
+        {
+            "clientTID": 456315879,
+            "type": "INFO",
+            "data": [
+                {
+                    "mapServerId": "Jfd8aa7e6ca38f1813bf038c56a48c025d14e91a9da098ffe202cc1e4f17091a",
+                    "mapClientId": 1,
+                    "version": 20210404175028.79
+                },
+                {
+                    "mapServerId": "JDd8aa7e6ca38f1813bf038c56a48c025d14e91a9da098ffe202cc1e4f17091a",
+                    "mapClientId": 2,
+                    "version": 20210404175028.79
+                },
+                {
+                    "mapServerId": "2fceebd07200269c863729fca6afc3d7588d447c08393df14a16edb2aa9ee6e3",
+                    "mapClientId": 3,
+                    "version": 20120404175028.79
+                }
+            ]
+        }
+    ]
+}

@@ -16,6 +16,7 @@ socket.on('connected', (data) => {
 
     socket.on('infoActionResult', result => {
         console.log(JSON.stringify(result, null, 2))
+        socket.emit('abort')
     })
 });
 

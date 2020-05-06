@@ -1,8 +1,8 @@
 // JavaScript socket.io code
 
 var io = require("socket.io-client");
-var campaignSubmitJSON = require("./campaignClientSubmit.json");
-var campaignDeleteJSON = require("./campaignClientDelete.json")
+var campaignSubmitJSON = require("./jsons/campaignClientSubmit.json");
+var campaignDeleteJSON = require("./jsons/campaignClientDelete.json")
 
 console.log('Starting connection...');
 var socket = io.connect('http://localhost:8080/sendActions');
