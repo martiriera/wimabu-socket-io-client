@@ -6,7 +6,7 @@ var mapSubmitJSON = require("./jsons/mapClientSubmitUNI.json");
 var mapUpdateJSON = require("./jsons/mapClientUpdateUNI.json")
 var mapDeleteJSON = require("./jsons/mapClientDeleteUNI.json")
 var forceAddJSON = require("./jsons/mapForceAdd.json")
-
+var { imageToBytea } = require("../images/imageToBytea");
 
 console.log('Starting connection...');
 var socket = io.connect('http://localhost:8080/sendActions');
@@ -14,19 +14,21 @@ socket.on('error', function (evData) {
     console.error('Connection Error:', evData);
 });
 
-socket.on('connected', function (data) {
+socket.on('connected', async function (data) {
     var mapHasCampaigns = false; //CHANGE IF NECESSARY
     console.log(data);
     setTimeout(() => socket.emit('disconnect'), 30000) //Disconnect from socket in X millis
+    await convertImage(forceAddJSON); // Convert images to byteArray and put in on add attrs
 
     // socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
-    socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
+    // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
     // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
+
     socket.on('mapActionResult', result => {
         console.log(JSON.stringify(result, null, 2))
         if (result.type === "OUTDATED") { // Map outdated on a client UPDATE attempt
-            sendForceUpdate();
-            // socket.emit('abort');
+            // sendForceUpdate();
+            socket.emit('abort');
         } else if (result.type === "MISSING") {
             // sendForceAdd();
             socket.emit('abort');
@@ -73,6 +75,10 @@ socket.on('connected', function (data) {
     function sendForceUpdate() {
         socket.emit('forceUpdate');
         console.log(`Force UPDATE Sent`)
+    }
+
+    async function convertImage(forceAddJSON) {
+        forceAddJSON.data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImageForcedAdd.jpeg");
     }
 
 });

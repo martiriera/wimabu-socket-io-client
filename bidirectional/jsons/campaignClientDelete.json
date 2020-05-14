@@ -1,7 +1,13 @@
-[{
-	"clientTID": "785892148",
-	"type": "DELETE",
-	"data": {
-		"dataCollectionCampaignServerId": "82cb5244b82b836b6fa86cec60fdda4e361305e538701dffb9a888fe115ae142"
-	}
-}]
+{
+	"owner": "347b467929a721eed3959a6474b61ca13655036c018cab49cb72b2b586bfd155",
+	"syncModeIsUnidirectional": false,
+	"actions": [
+		{
+			"clientTID": "725892469",
+			"type": "DELETE",
+			"data": {
+				"mapServerId": "TO BE FILLED"
+			}
+		}
+	]
+}

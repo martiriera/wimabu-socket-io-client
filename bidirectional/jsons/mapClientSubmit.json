@@ -11,7 +11,7 @@
 				"mapName": "Barça",
 				"buildingName": "Camp Nou",
 				"floorNumber": 1,
-				"mapImagePath": "/fcb",
+				"mapImageByteArray": null,
 				"mapCoordinates": [
 					{
 						"x": 1,
@@ -41,7 +41,7 @@
 				"mapName": "Madrid",
 				"buildingName": "Santiago Bernabeu",
 				"floorNumber": 2,
-				"mapImagePath": "/mad",
+				"mapImageByteArray": null,
 				"mapCoordinates": [
 					{
 						"x": 3,
@@ -71,7 +71,7 @@
 				"mapName": "Liverpool",
 				"buildingName": "Anfield",
 				"floorNumber": 5,
-				"mapImagePath": "/lvp",
+				"mapImageByteArray": null,
 				"mapCoordinates": [
 					{
 						"x": 5,

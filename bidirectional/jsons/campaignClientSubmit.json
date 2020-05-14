@@ -1,228 +1,232 @@
-[
-    {
-        "clientTID": "111111111",
-        "type": "ADD",
-        "data": {
-            "dataCollectionCampaignServerId": null,
-            "dataCollectionCampaignClientId": 1,
-            "angle": 10,
-            "initDate": "2020-03-28T19:25:10.713Z",
-            "endDate": "2020-04-28T20:25:10.713Z",
-            "numOfSamples": 4,
-            "timeBetweenSamples": 0.1,
-            "numOfBatches": 2,
-            "timeBetweenBatches": 0.1,
-            "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf",
-            "coordinateData": {
-                "x": 40,
-                "y": 40,
-                "z": 40,
-                "pixelX": 0.99,
-                "pixelY": 0.99
-            },
-            "campaignBatches": [
-                {
-                    "batchNumber": 1,
-                    "batchSamples": [
-                        {
-                            "value": 1,
-                            "error": 0.1,
-                            "sampleNumber": 1,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "AAAA",
-                                "l2address": "aaaa",
-                                "technology": "techA"
-                            }
-                        },
-                        {
-                            "value": 2,
-                            "error": 0.2,
-                            "sampleNumber": 2,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "AAAA",
-                                "l2address": "aaaa",
-                                "technology": "techA"
-                            }
-                        }
-                    ]
+{
+    "owner": "347b467929a721eed3959a6474b61ca13655036c018cab49cb72b2b586bfd155",
+    "syncModeIsUnidirectional": false,
+    "actions": [
+        {
+            "clientTID": "111111111",
+            "type": "ADD",
+            "data": {
+                "dataCollectionCampaignServerId": null,
+                "dataCollectionCampaignClientId": 1,
+                "angle": 10,
+                "initDate": "2020-03-28T19:25:10.713Z",
+                "endDate": "2020-04-28T20:25:10.713Z",
+                "numOfSamples": 4,
+                "timeBetweenSamples": 0.1,
+                "numOfBatches": 2,
+                "timeBetweenBatches": 0.1,
+                "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf", 
+                "coordinateData": {
+                    "x": 40,
+                    "y": 40,
+                    "z": 40,
+                    "pixelX": 0.99,
+                    "pixelY": 0.99
                 },
-                {
-                    "batchNumber": 2,
-                    "batchSamples": [
-                        {
-                            "value": 3,
-                            "error": 0.3,
-                            "sampleNumber": 1,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "AAAA",
-                                "l2address": "aaaa",
-                                "technology": "techA"
+                "campaignBatches": [
+                    {
+                        "batchNumber": 1,
+                        "batchSamples": [
+                            {
+                                "value": 1,
+                                "error": 0.1,
+                                "sampleNumber": 1,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "AAAA",
+                                    "l2address": "aaaa",
+                                    "technology": "techA"
+                                }
+                            },
+                            {
+                                "value": 2,
+                                "error": 0.2,
+                                "sampleNumber": 2,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "AAAA",
+                                    "l2address": "aaaa",
+                                    "technology": "techA"
+                                }
                             }
-                        },
-                        {
-                            "value": 4,
-                            "error": 0.4,
-                            "sampleNumber": 2,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "BBBB",
-                                "l2address": "bbbb",
-                                "technology": "techB"
+                        ]
+                    },
+                    {
+                        "batchNumber": 2,
+                        "batchSamples": [
+                            {
+                                "value": 3,
+                                "error": 0.3,
+                                "sampleNumber": 1,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "AAAA",
+                                    "l2address": "aaaa",
+                                    "technology": "techA"
+                                }
+                            },
+                            {
+                                "value": 4,
+                                "error": 0.4,
+                                "sampleNumber": 2,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "BBBB",
+                                    "l2address": "bbbb",
+                                    "technology": "techB"
+                                }
                             }
-                        }
-                    ]
-                }
-            ]
-        }
-    },
-    {
-        "clientTID": "222222222",
-        "type": "ADD",
-        "data": {
-            "dataCollectionCampaignServerId": null,
-            "dataCollectionCampaignClientId": 2,
-            "angle": 20,
-            "initDate": "2020-03-28T19:25:10.713Z",
-            "endDate": "2020-04-28T20:25:10.713Z",
-            "numOfSamples": 4,
-            "timeBetweenSamples": 0.2,
-            "numOfBatches": 2,
-            "timeBetweenBatches": 0.2,
-            "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf",
-            "coordinateData": {
-                "x": 4,
-                "y": 4,
-                "z": 4,
-                "pixelX": 0.4,
-                "pixelY": 0.4
-            },
-            "campaignBatches": [
-                {
-                    "batchNumber": 1,
-                    "batchSamples": [
-                        {
-                            "value": 5,
-                            "error": 0.5,
-                            "sampleNumber": 1,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "CCCC",
-                                "l2address": "cccc",
-                                "technology": "techC"
-                            }
-                        },
-                        {
-                            "value": 6,
-                            "error": 0.6,
-                            "sampleNumber": 2,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "CCCC",
-                                "l2address": "cccc",
-                                "technology": "techC"
-                            }
-                        }
-                    ]
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "clientTID": "222222222",
+            "type": "ADD",
+            "data": {
+                "dataCollectionCampaignServerId": null,
+                "dataCollectionCampaignClientId": 2,
+                "angle": 20,
+                "initDate": "2020-03-28T19:25:10.713Z",
+                "endDate": "2020-04-28T20:25:10.713Z",
+                "numOfSamples": 4,
+                "timeBetweenSamples": 0.2,
+                "numOfBatches": 2,
+                "timeBetweenBatches": 0.2,
+                "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf",
+                "coordinateData": {
+                    "x": 4,
+                    "y": 4,
+                    "z": 4,
+                    "pixelX": 0.4,
+                    "pixelY": 0.4
                 },
-                {
-                    "batchNumber": 2,
-                    "batchSamples": [
-                        {
-                            "value": 7,
-                            "error": 0.7,
-                            "sampleNumber": 1,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "ZZZZ",
-                                "l2address": "zzzz",
-                                "technology": "techZ"
+                "campaignBatches": [
+                    {
+                        "batchNumber": 1,
+                        "batchSamples": [
+                            {
+                                "value": 5,
+                                "error": 0.5,
+                                "sampleNumber": 1,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "CCCC",
+                                    "l2address": "cccc",
+                                    "technology": "techC"
+                                }
+                            },
+                            {
+                                "value": 6,
+                                "error": 0.6,
+                                "sampleNumber": 2,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "CCCC",
+                                    "l2address": "cccc",
+                                    "technology": "techC"
+                                }
                             }
-                        },
-                        {
-                            "value": 8,
-                            "error": 0.8,
-                            "sampleNumber": 2,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "YYYY",
-                                "l2address": "yyyy",
-                                "technology": "techY"
+                        ]
+                    },
+                    {
+                        "batchNumber": 2,
+                        "batchSamples": [
+                            {
+                                "value": 7,
+                                "error": 0.7,
+                                "sampleNumber": 1,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "ZZZZ",
+                                    "l2address": "zzzz",
+                                    "technology": "techZ"
+                                }
+                            },
+                            {
+                                "value": 8,
+                                "error": 0.8,
+                                "sampleNumber": 2,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "YYYY",
+                                    "l2address": "yyyy",
+                                    "technology": "techY"
+                                }
                             }
-                        }
-                    ]
-                }
-            ]
-        }
-    },
-    {
-        "clientTID": "333333333",
-        "type": "ADD",
-        "data": {
-            "dataCollectionCampaignServerId": null,
-            "dataCollectionCampaignClientId": 3,
-            "angle": 30,
-            "initDate": "2020-03-28T19:25:10.713Z",
-            "endDate": "2020-04-28T20:25:10.713Z",
-            "numOfSamples": 3,
-            "timeBetweenSamples": 0.3,
-            "numOfBatches": 2,
-            "timeBetweenBatches": 0.3,
-            "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf",
-            "coordinateData": {
-                "x": 5,
-                "y": 5,
-                "z": 5,
-                "pixelX": 0.5,
-                "pixelY": 0.5
-            },
-            "campaignBatches": [
-                {
-                    "batchNumber": 1,
-                    "batchSamples": [
-                        {
-                            "value": 10,
-                            "error": 0.10,
-                            "sampleNumber": 2,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "AAAA",
-                                "l2address": "aaaa",
-                                "technology": "techA"
-                            }
-                        }
-                    ]
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "clientTID": "333333333",
+            "type": "ADD",
+            "data": {
+                "dataCollectionCampaignServerId": null,
+                "dataCollectionCampaignClientId": 3,
+                "angle": 30,
+                "initDate": "2020-03-28T19:25:10.713Z",
+                "endDate": "2020-04-28T20:25:10.713Z",
+                "numOfSamples": 3,
+                "timeBetweenSamples": 0.3,
+                "numOfBatches": 2,
+                "timeBetweenBatches": 0.3,
+                "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf",
+                "coordinateData": {
+                    "x": 5,
+                    "y": 5,
+                    "z": 5,
+                    "pixelX": 0.5,
+                    "pixelY": 0.5
                 },
-                {
-                    "batchNumber": 2,
-                    "batchSamples": [
-                        {
-                            "value": 11,
-                            "error": 0.11,
-                            "sampleNumber": 1,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "FFFF",
-                                "l2address": "ffff",
-                                "technology": "techF"
+                "campaignBatches": [
+                    {
+                        "batchNumber": 1,
+                        "batchSamples": [
+                            {
+                                "value": 10,
+                                "error": 0.10,
+                                "sampleNumber": 2,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "AAAA",
+                                    "l2address": "aaaa",
+                                    "technology": "techA"
+                                }
                             }
-                        },
-                        {
-                            "value": 12,
-                            "error": 0.12,
-                            "sampleNumber": 2,
-                            "dateInMillis": 1586706900419,
-                            "sampleBS": {
-                                "networkAddress": "FFFF",
-                                "l2address": "ffff",
-                                "technology": "techF"
+                        ]
+                    },
+                    {
+                        "batchNumber": 2,
+                        "batchSamples": [
+                            {
+                                "value": 11,
+                                "error": 0.11,
+                                "sampleNumber": 1,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "FFFF",
+                                    "l2address": "ffff",
+                                    "technology": "techF"
+                                }
+                            },
+                            {
+                                "value": 12,
+                                "error": 0.12,
+                                "sampleNumber": 2,
+                                "dateInMillis": 1586706900419,
+                                "sampleBS": {
+                                    "networkAddress": "FFFF",
+                                    "l2address": "ffff",
+                                    "technology": "techF"
+                                }
                             }
-                        }
-                    ]
-                }
-            ]
+                        ]
+                    }
+                ]
+            }
         }
-    }
-]
+    ]
+}

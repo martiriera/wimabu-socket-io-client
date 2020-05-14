@@ -22,8 +22,8 @@ socket.on('connected', (data) => {
             socket.emit('abort')
             // sendForceUpdate()
         }else if (result.type === 'MISSING'){
-            // socket.emit('abort')
-            sendForceAdd()
+            socket.emit('abort')
+            // sendForceAdd()
         }
 
     })

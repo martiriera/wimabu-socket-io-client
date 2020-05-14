@@ -13,7 +13,7 @@ socket.on('error', function (evData) {
 socket.on('connected', (data) => {
     console.log(data);
 
-    socket.emit('sendCampaignActions', campaignSubmitJSON);
+    // socket.emit('sendCampaignActions', campaignSubmitJSON);
     // socket.emit('sendCampaignActions', campaignDeleteJSON);
 
     socket.on('campaignActionResult', result => {

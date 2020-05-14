@@ -1,13 +1,13 @@
 {
 	"owner":"347b467929a721eed3959a6474b61ca13655036c018cab49cb72b2b586bfd155",
-	"syncModeIsUnidrectional": true,
+	"syncModeIsUnidirectional": true,
 	"actions": [
 		{
 			"clientTID": "725892469",
 			"type": "UPDATE",
 			"data": {
-				"mapServerId": "b1cf121ecbbe34328108cf8e1682ffb003114058ff236b4e753767e98e4e0e50",
-				"buildingName": "Nuevo Los Cármenes",
+				"mapServerId": "TO BE FILLED",
+				"buildingName": "Maracana",
 				"version": 20120404175028.79
 			}
 		}

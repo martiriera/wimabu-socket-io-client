@@ -5,6 +5,7 @@ var mapSubmitJSON = require("./jsons/mapClientSubmit.json");
 var campaignSubmitJSON = require("./jsons/campaignClientSubmit.json");
 var mapUpdateJSON = require("./jsons/mapClientUpdate.json")
 var mapDeleteJSON = require("./jsons/mapClientDelete.json")
+var { imageToBytea } = require("../images/imageToBytea");
 
 
 console.log('Starting connection...');
@@ -13,14 +14,16 @@ socket.on('error', function (evData) {
     console.error('Connection Error:', evData);
 });
 
-socket.on('connected', function (data) {
+socket.on('connected', async function (data) {
     var mapHasCampaigns = false; //CHANGE IF NECESSARY
     console.log(data);
     setTimeout(() => socket.emit('disconnect'), 30000) //Disconnect from socket in X millis
+    await convertImages(mapSubmitJSON); // Convert images to byteArray and put in on add attrs
 
     // socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
     // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
-    socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
+    // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
+    
     socket.on('mapActionResult', result => {
         console.log(JSON.stringify(result, null, 2))
         if (result.type === "OUTDATED") { // Map outdated on a client UPDATE attempt
@@ -41,7 +44,6 @@ socket.on('connected', function (data) {
         socket.emit('clientFin',
             {
                 clientTID: clientTID,
-                status: 'FIN',
                 actions: null,
             }
         )
@@ -52,7 +54,6 @@ socket.on('connected', function (data) {
         socket.emit('clientFin',
             {
                 clientTID: 'TID',
-                status: 'FIN',
                 actions: campaignSubmitJSON // NOT SIMPLY AS THIS. MUST ADD CLIENT LOGIC TO PUT MAPSERVERIDS HERE
             }
         )
@@ -61,4 +62,11 @@ socket.on('connected', function (data) {
     }
 
 });
+
+async function convertImages(mapSubmitJSON) {
+    mapSubmitJSON.actions[0].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage1.png");
+    mapSubmitJSON.actions[1].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage2.png");
+    mapSubmitJSON.actions[2].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage3.png");
+
+}
 
