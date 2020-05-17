@@ -25,16 +25,14 @@ socket.on('connected', (data) => {
         }
     })
 
-    function sendFin() {
+    function sendFin(clientTID) {
         socket.emit('clientFin',
             {
-                clientTID: 'TID',
-                status: 'FIN',
+                clientTID: clientTID,
                 actions: null,
             }
         )
-        console.log(`FIN sent`)
-
+        console.log(`FIN Sent`)
     }
 
 });

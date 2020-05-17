@@ -6,8 +6,8 @@
             "clientTID": "111111111",
             "type": "ADD",
             "data": {
-                "dataCollectionCampaignServerId": null,
-                "dataCollectionCampaignClientId": 1,
+                "campaignServerId": null,
+                "campaignClientId": 1,
                 "angle": 10,
                 "initDate": "2020-03-28T19:25:10.713Z",
                 "endDate": "2020-04-28T20:25:10.713Z",
@@ -15,7 +15,7 @@
                 "timeBetweenSamples": 0.1,
                 "numOfBatches": 2,
                 "timeBetweenBatches": 0.1,
-                "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf", 
+                "mapServerId": "TO BE FILLED", 
                 "coordinateData": {
                     "x": 40,
                     "y": 40,
@@ -85,8 +85,8 @@
             "clientTID": "222222222",
             "type": "ADD",
             "data": {
-                "dataCollectionCampaignServerId": null,
-                "dataCollectionCampaignClientId": 2,
+                "campaignServerId": null,
+                "campaignClientId": 2,
                 "angle": 20,
                 "initDate": "2020-03-28T19:25:10.713Z",
                 "endDate": "2020-04-28T20:25:10.713Z",
@@ -94,7 +94,7 @@
                 "timeBetweenSamples": 0.2,
                 "numOfBatches": 2,
                 "timeBetweenBatches": 0.2,
-                "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf",
+                "mapServerId": "TO BE FILLED",
                 "coordinateData": {
                     "x": 4,
                     "y": 4,
@@ -164,8 +164,8 @@
             "clientTID": "333333333",
             "type": "ADD",
             "data": {
-                "dataCollectionCampaignServerId": null,
-                "dataCollectionCampaignClientId": 3,
+                "campaignServerId": null,
+                "campaignClientId": 3,
                 "angle": 30,
                 "initDate": "2020-03-28T19:25:10.713Z",
                 "endDate": "2020-04-28T20:25:10.713Z",
@@ -173,7 +173,7 @@
                 "timeBetweenSamples": 0.3,
                 "numOfBatches": 2,
                 "timeBetweenBatches": 0.3,
-                "mapServerId": "bad3b81c8fb4fbaffbab49286f0a8234f98d0e72af0bac18b9b397d5225b75bf",
+                "mapServerId": "TO BE FILLED",
                 "coordinateData": {
                     "x": 5,
                     "y": 5,
