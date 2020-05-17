@@ -9,3 +9,5 @@ This repo contain client simulations to test WifiMapBuilder-server backend. The 
 * bidirectional/actionMapInfo.js: To test the info action type on Maps. Change "mapClientInfo.json" with desired (and/or existing) ids/versions. Client should send a similar report at every sync.
 
 * unidirectional/actionMapsInfoUnidirectional.js: Same as avobe but unidirectionally. You will have to answer with forcingAdd/forcingUpdate too. 
+
+Note: Almost all jsons have "values" to be filled before starting any sync
