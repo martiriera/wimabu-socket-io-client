@@ -1,5 +1,5 @@
 {
-    "owner":"327b467929a721eed3959a6474b61ca13655036c018cab49cb72b2b586bfd155",
+    "owner":"347b467929a721eed3959a6474b61ca13655036c018cab49cb72b2b586bfd155",
     "syncModeIsUnidirectional": false,
     "actions": [
         {
@@ -7,19 +7,19 @@
             "type": "INFO",
             "data": [
                 {
-                    "mapServerId": "TO BE FILLED",
+                    "mapServerId": "TO BE FILLED ",
                     "mapClientId": 1,
-                    "version": 20210404175028.79
+                    "version": "TO BE FILLED  (YYYYMMDDHHmmss.SS)"
                 },
                 {
-                    "mapServerId": "TO BE FILLED",
+                    "mapServerId": "TO BE FILLED ",
                     "mapClientId": 2,
-                    "version": 20210404175028.79
+                    "version": "TO BE FILLED (YYYYMMDDHHmmss.SS)"
                 },
                 {
-                    "mapServerId": "TO BE FILLED",
+                    "mapServerId": "TO BE FILLED ",
                     "mapClientId": 3,
-                    "version": 20120404175028.79
+                    "version": "TO BE FILLED (YYYYMMDDHHmmss.SS)"
                 }
             ]
         }

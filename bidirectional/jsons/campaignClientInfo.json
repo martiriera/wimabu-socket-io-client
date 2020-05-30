@@ -1,0 +1,15 @@
+{
+    "owner":"347b467929a721eed3959a6474b61ca13655036c018cab49cb72b2b586bfd155",
+    "syncModeIsUnidirectional": false,
+    "actions": [
+        {
+            "clientTID": 456315879,
+            "type": "INFO",
+            "data": [
+                {
+                    "campaignServerId": "TO BE FILLED"
+                }
+            ]
+        }
+    ]
+}
