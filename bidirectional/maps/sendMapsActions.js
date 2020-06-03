@@ -5,7 +5,7 @@ var mapSubmitJSON = require("./jsons/mapClientSubmit.json");
 var campaignSubmitJSON = require("./jsons/campaignClientSubmit.json");
 var mapUpdateJSON = require("./jsons/mapClientUpdate.json")
 var mapDeleteJSON = require("./jsons/mapClientDelete.json")
-var { imageToBytea } = require("../images/imageToBytea");
+var { imageToBytea } = require("../../images/imageToBytea");
 
 
 console.log('Starting connection...');
