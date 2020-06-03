@@ -1,8 +1,8 @@
 // JavaScript socket.io code
 
 var io = require("socket.io-client");
-var mapSubmitJSON = require("./jsons/mapClientSubmit.json");
-var campaignSubmitJSON = require("./jsons/campaignClientSubmit.json");
+var mapAddJSON = require("./jsons/mapClientSubmit.json");
+var campaignSubmitJSON = require("../camps/jsons/campaignClientSubmit.json");
 var mapUpdateJSON = require("./jsons/mapClientUpdate.json")
 var mapDeleteJSON = require("./jsons/mapClientDelete.json")
 var { imageToBytea } = require("../../images/imageToBytea");
@@ -18,9 +18,9 @@ socket.on('connected', async function (data) {
     var mapHasCampaigns = false; //CHANGE IF NECESSARY
     console.log(data);
     setTimeout(() => socket.emit('disconnect'), 30000) //Disconnect from socket in X millis
-    await convertImages(mapSubmitJSON); // Convert images to byteArray and put in on add attrs
+    await convertImages(mapAddJSON); // Convert images to byteArray and put in on add attrs
 
-    // socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
+    socket.emit('sendMapActions', mapAddJSON); //Send ADD map actions
     // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
     // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
     
@@ -63,10 +63,10 @@ socket.on('connected', async function (data) {
 
 });
 
-async function convertImages(mapSubmitJSON) {
-    mapSubmitJSON.actions[0].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage1.png");
-    mapSubmitJSON.actions[1].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage2.png");
-    mapSubmitJSON.actions[2].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage3.png");
+async function convertImages(mapAddJSON) {
+    mapAddJSON.actions[0].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage1.png");
+    mapAddJSON.actions[1].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage2.png");
+    mapAddJSON.actions[2].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage3.png");
 
 }
 
