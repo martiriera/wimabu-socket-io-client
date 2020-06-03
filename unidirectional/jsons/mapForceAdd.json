@@ -2,12 +2,13 @@
     "clientTID":"xxx",
     "type":"ADD",
     "data": {
-        "mapServerId": "",
+        "mapServerId": "TO BE FILLED",
         "mapClientId": 6,
         "mapName": "Milano AC",
         "buildingName": "San Siro",
         "floorNumber": 1,
         "mapImageByteArray": null,
+        "mapOwner":"24dca40fbaf150ea700057c91c77bb00f747acee1c46a528cb09c427ecfa20bc",
         "mapCoordinates": [
             {
                 "x": 2,

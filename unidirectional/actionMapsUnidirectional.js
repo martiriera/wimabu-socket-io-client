@@ -18,7 +18,7 @@ socket.on('connected', async function (data) {
     var mapHasCampaigns = false; //CHANGE IF NECESSARY
     console.log(data);
     setTimeout(() => socket.emit('disconnect'), 30000) //Disconnect from socket in X millis
-    await convertImage(forceAddJSON); // Convert images to byteArray and put in on add attrs
+    await convertImage(mapSubmitJSON); // Convert images to byteArray and put in on add attrs
 
     // socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
     // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
@@ -67,7 +67,8 @@ socket.on('connected', async function (data) {
 
     }
 
-    function sendForceAdd() {
+    async function sendForceAdd() {
+        await convertForcedImage(forceAddJSON);
         socket.emit('forceAdd', forceAddJSON);
         console.log(`Force ADD Sent`)
     }
@@ -77,9 +78,15 @@ socket.on('connected', async function (data) {
         console.log(`Force UPDATE Sent`)
     }
 
-    async function convertImage(forceAddJSON) {
-        forceAddJSON.data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImageForcedAdd.jpeg");
+    async function convertImage(mapSubmitJSON) {
+        mapSubmitJSON.actions[0].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage4.png");
+        mapSubmitJSON.actions[1].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage5.png");
     }
+
+    async function convertForcedImage(forceAddJSON) {
+        forceAddJSON.data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImageForcedAdd.png");
+    }
+
 
 });
 

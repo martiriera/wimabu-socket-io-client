@@ -11,7 +11,7 @@
 				"mapName": "Chelsea",
 				"buildingName": "Stamford Bridge",
 				"floorNumber": 1,
-				"mapImagePath": "/che",
+				"mapImageByteArray": null,
 				"mapCoordinates": [
 					{
 						"x": 9,
@@ -41,7 +41,7 @@
 				"mapName": "Bayern",
 				"buildingName": "Allianz Arena",
 				"floorNumber": 2,
-				"mapImagePath": "/bay",
+				"mapImageByteArray": null,
 				"mapCoordinates": [
 					{
 						"x": 6,

@@ -1,5 +1,5 @@
 {
-    "owner":"327b467929a721eed3959a6474b61ca13655036c018cab49cb72b2b586bfd155",
+    "owner":"24dca40fbaf150ea700057c91c77bb00f747acee1c46a528cb09c427ecfa20bc",
     "syncModeIsUnidirectional": true,
     "actions": [
         {
@@ -8,13 +8,8 @@
             "data": [
                 {
                     "mapServerId": "TO BE FILLED",
-                    "mapClientId": 3,
-                    "version": 20120404175028.79
-                },
-                {
-                    "mapServerId": "TO BE FILLED",
                     "mapClientId": 5,
-                    "version": 20210505185035.79
+                    "version": "TO BE FILLED (YYYYMMDDHHmmss.SS)"
                 }
             ]
         }

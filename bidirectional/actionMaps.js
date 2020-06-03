@@ -43,7 +43,7 @@ socket.on('connected', async function (data) {
     function sendFin(clientTID) {
         socket.emit('clientFin',
             {
-                clientTID: clientTID,
+                clientTID: 'TID',
                 actions: null,
             }
         )

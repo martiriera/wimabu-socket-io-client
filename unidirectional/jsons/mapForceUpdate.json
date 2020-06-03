@@ -3,7 +3,7 @@
     "type": "UPDATE",
     "data": {
         "mapServerId": "TO BE FILLED",
-        "buildingName": "Maracana",
-        "version": 20120404175028.79
+        "buildingName": "Wembley",
+        "version": "TO BE FILLED (YYYYMMDDHHmmss.SS)"
     }
 }
