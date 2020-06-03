@@ -4,7 +4,7 @@ var io = require("socket.io-client");
 var mapClientInfo = require("./jsons/mapClientInfoUNI.json");
 var forceAddJSON = require("./jsons/mapForceAdd.json");
 var forceUpdateJSON = require("./jsons/mapForceUpdate.json");
-var { imageToBytea } = require("../images/imageToBytea");
+var { imageToBytea } = require("../../images/imageToBytea");
 
 
 console.log('Starting connection...');

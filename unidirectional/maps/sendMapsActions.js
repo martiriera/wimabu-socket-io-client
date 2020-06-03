@@ -6,7 +6,7 @@ var mapSubmitJSON = require("./jsons/mapClientSubmitUNI.json");
 var mapUpdateJSON = require("./jsons/mapClientUpdateUNI.json")
 var mapDeleteJSON = require("./jsons/mapClientDeleteUNI.json")
 var forceAddJSON = require("./jsons/mapForceAdd.json")
-var { imageToBytea } = require("../images/imageToBytea");
+var { imageToBytea } = require("../../images/imageToBytea");
 
 console.log('Starting connection...');
 var socket = io.connect('http://localhost:8080/sendActions');
