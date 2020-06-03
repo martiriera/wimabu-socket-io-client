@@ -1,7 +1,7 @@
 // JavaScript socket.io code
 
 var io = require("socket.io-client");
-var campaignSubmitJSON = require("./jsons/campaignClientSubmit.json");
+var campaignAddJSON = require("./jsons/campaignClientAdd.json");
 var campaignDeleteJSON = require("./jsons/campaignClientDelete.json")
 
 console.log('Starting connection...');
@@ -13,7 +13,7 @@ socket.on('error', function (evData) {
 socket.on('connected', (data) => {
     console.log(data);
 
-    // socket.emit('sendCampaignActions', campaignSubmitJSON);
+    socket.emit('sendCampaignActions', campaignAddJSON);
     // socket.emit('sendCampaignActions', campaignDeleteJSON);
 
     socket.on('campaignActionResult', result => {

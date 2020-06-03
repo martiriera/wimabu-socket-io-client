@@ -79,12 +79,12 @@ socket.on('connected', async function (data) {
     }
 
     async function convertImage(mapSubmitJSON) {
-        mapSubmitJSON.actions[0].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage4.png");
-        mapSubmitJSON.actions[1].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage5.png");
+        mapSubmitJSON.actions[0].data.mapImageByteArray = await imageToBytea(__dirname + "/../../images/mapImage4.png");
+        mapSubmitJSON.actions[1].data.mapImageByteArray = await imageToBytea(__dirname + "/../../images/mapImage5.png");
     }
 
     async function convertForcedImage(forceAddJSON) {
-        forceAddJSON.data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImageForcedAdd.png");
+        forceAddJSON.data.mapImageByteArray = await imageToBytea(__dirname + "/../../images/mapImageForcedAdd.png");
     }
 
 

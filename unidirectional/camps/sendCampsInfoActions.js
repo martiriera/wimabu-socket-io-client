@@ -17,7 +17,7 @@ socket.on('connected', (data) => {
 
     socket.on('infoActionResult', result => {
         console.log(JSON.stringify(result, null, 2))
-        if (result.type === 'MISSING'){
+        if (result.type === 'MISSING') {
             // socket.emit('abort')
             sendForceAdd()
         }
@@ -27,6 +27,15 @@ socket.on('connected', (data) => {
     function sendForceAdd() {
         socket.emit('forceAdd', forceAddJSON);
         console.log(`Force ADD Sent`)
+        socket.on('campaignActionResult', (forcedAddResult) => {
+            console.log(forcedAddResult)
+            socket.emit('clientFin', {
+                clientTID: 'TID',
+                actions: null
+            })
+            console.log('FIN SENT')
+
+        })
     }
 
 });

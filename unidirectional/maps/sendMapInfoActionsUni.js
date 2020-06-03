@@ -60,7 +60,7 @@ socket.on('connected', (data) => {
     }
 
     async function convertImages(forceAddJSON) {
-        forceAddJSON.data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImageForcedAdd.png");
+        forceAddJSON.data.mapImageByteArray = await imageToBytea(__dirname + "/../../images/mapImageForcedAdd.png");
     }
 
 });

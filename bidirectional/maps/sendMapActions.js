@@ -1,8 +1,8 @@
 // JavaScript socket.io code
 
 var io = require("socket.io-client");
-var mapAddJSON = require("./jsons/mapClientSubmit.json");
-var campaignSubmitJSON = require("../camps/jsons/campaignClientSubmit.json");
+var mapAddJSON = require("./jsons/mapClientAdd.json");
+var campaignSubmitJSON = require("../camps/jsons/campaignClientAdd.json");
 var mapUpdateJSON = require("./jsons/mapClientUpdate.json")
 var mapDeleteJSON = require("./jsons/mapClientDelete.json")
 var { imageToBytea } = require("../../images/imageToBytea");
@@ -64,9 +64,9 @@ socket.on('connected', async function (data) {
 });
 
 async function convertImages(mapAddJSON) {
-    mapAddJSON.actions[0].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage1.png");
-    mapAddJSON.actions[1].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage2.png");
-    mapAddJSON.actions[2].data.mapImageByteArray = await imageToBytea(__dirname + "/../images/mapImage3.png");
+    mapAddJSON.actions[0].data.mapImageByteArray = await imageToBytea(__dirname + "/../../images/mapImage1.png");
+    mapAddJSON.actions[1].data.mapImageByteArray = await imageToBytea(__dirname + "/../../images/mapImage2.png");
+    mapAddJSON.actions[2].data.mapImageByteArray = await imageToBytea(__dirname + "/../../images/mapImage3.png");
 
 }
 
