@@ -2,7 +2,7 @@
     "clientTID": "xxx",
     "type": "ADD",
     "data": {
-        "campaignServerId": "FORCEDisd",
+        "campaignServerId": "TO BE FILLED",
         "campaignClientId": 3,
         "angle": 43,
         "initDate": "2020-03-28T19:25:10.713Z",
@@ -11,7 +11,7 @@
         "timeBetweenSamples": 0.55,
         "numOfBatches": 2,
         "timeBetweenBatches": 0.36,
-        "mapServerId": "c67bd74ed88e05d9acd2758feaf3dbd29055aa33d39ea0cc40ab7a5d929b2caf",
+        "mapServerId": "TO BE FILLED",
         "coordinateData": {
             "x": 8,
             "y": 8,
