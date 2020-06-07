@@ -20,7 +20,7 @@ socket.on('connected', async function (data) {
     setTimeout(() => socket.emit('disconnect'), 30000) //Disconnect from socket in X millis
     await convertImages(mapAddJSON); // Convert images to byteArray and put in on add attrs
 
-    socket.emit('sendMapActions', mapAddJSON); //Send ADD map actions
+    // socket.emit('sendMapActions', mapAddJSON); //Send ADD map actions
     // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
     // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
     

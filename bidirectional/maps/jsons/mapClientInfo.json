@@ -7,19 +7,19 @@
             "type": "INFO",
             "data": [
                 {
-                    "mapServerId": "TO BE FILLED ",
+                    "mapServerId": "TO BE FILLED",
                     "mapClientId": 1,
-                    "version": "TO BE FILLED  (YYYYMMDDHHmmss.SS)"
+                    "version": "TO BE FILLED (YYYYMMDDHHmmssSS)"
                 },
                 {
-                    "mapServerId": "TO BE FILLED ",
+                    "mapServerId": "TO BE FILLED",
                     "mapClientId": 2,
-                    "version": "TO BE FILLED (YYYYMMDDHHmmss.SS)"
+                    "version": "TO BE FILLED (YYYYMMDDHHmmssSS)"
                 },
                 {
-                    "mapServerId": "TO BE FILLED ",
+                    "mapServerId": "TO BE FILLED",
                     "mapClientId": 3,
-                    "version": "TO BE FILLED (YYYYMMDDHHmmss.SS)"
+                    "version": "TO BE FILLED (YYYYMMDDHHmmssSS)"
                 }
             ]
         }
