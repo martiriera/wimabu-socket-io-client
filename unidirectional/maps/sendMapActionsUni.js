@@ -1,11 +1,12 @@
 // JavaScript socket.io code
 
 var io = require("socket.io-client");
-var mapSubmitJSON = require("./jsons/mapClientSubmitUNI.json");
+var mapSubmitJSON = require("./jsons/mapClientAddUNI.json");
 // var campaignSubmitJSON = require("./jsons/campaignClientSubmitUNI.json");
-var mapUpdateJSON = require("./jsons/mapClientUpdateUNI.json")
-var mapDeleteJSON = require("./jsons/mapClientDeleteUNI.json")
-var forceAddJSON = require("./jsons/mapForceAdd.json")
+var mapUpdateJSON = require("./jsons/mapClientUpdateUNI.json");
+var mapDeleteJSON = require("./jsons/mapClientDeleteUNI.json");
+var forceAddJSON = require("./jsons/mapForceAdd.json");
+var userCredentials = require("../../userCredentials.json");
 var { imageToBytea } = require("../../images/imageToBytea");
 
 console.log('Starting connection...');
@@ -20,12 +21,22 @@ socket.on('connected', async function (data) {
     setTimeout(() => socket.emit('disconnect'), 30000) //Disconnect from socket in X millis
     await convertImage(mapSubmitJSON); // Convert images to byteArray and put in on add attrs
 
-    // socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
-    // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
-    // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
+    // Before sending any actions, submit user credentials
+    socket.emit('sendUserCredentials', userCredentials);
+
+    // When credentials are validated start SYNC sending actions
+    socket.on('userAuth', authRes => {
+        if (authRes) {
+            // socket.emit('sendMapActions', mapSubmitJSON); //Send ADD map actions
+            // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
+            // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action
+        } else {
+            console.log('Error authenticating user')
+        }
+    })
 
     socket.on('mapActionResult', result => {
-        console.log(JSON.stringify(result, null, 2))
+        console.log(result)
         if (result.type === "OUTDATED") { // Map outdated on a client UPDATE attempt
             // sendForceUpdate();
             socket.emit('abort');

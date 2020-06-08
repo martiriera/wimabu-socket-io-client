@@ -1,5 +1,4 @@
 {
-	"owner":"347b467929a721eed3959a6474b61ca13655036c018cab49cb72b2b586bfd155",
 	"syncModeIsUnidirectional": true,
 	"actions": [
 		{
@@ -8,7 +7,7 @@
 			"data": {
 				"mapServerId": "TO BE FILLED",
 				"buildingName": "Maracana",
-				"version": 20120404175028.79
+				"version": "TO BE FILLED (YYYYMMDDHHMMSSss)"
 			}
 		}
 	]
