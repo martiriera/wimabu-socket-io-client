@@ -3,7 +3,9 @@
     "type": "UPDATE",
     "data": {
         "mapServerId": "TO BE FILLED",
-        "buildingName": "Wembley",
+        "mapName": "Athletic Club",
+        "buildingName": "San Mamés",
+        "floorNumber": 2,
         "version": "TO BE FILLED (YYYYMMDDHHmmssSS)"
     }
 }
