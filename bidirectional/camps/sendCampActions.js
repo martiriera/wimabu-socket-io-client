@@ -3,6 +3,7 @@
 var io = require("socket.io-client");
 var campaignAddJSON = require("./jsons/campaignClientAdd.json");
 var campaignDeleteJSON = require("./jsons/campaignClientDelete.json")
+var userCredentials = require("../../userCredentials.json");
 
 console.log('Starting connection...');
 var socket = io.connect('http://localhost:8080/sendActions');
@@ -13,8 +14,18 @@ socket.on('error', function (evData) {
 socket.on('connected', (data) => {
     console.log(data);
 
-    socket.emit('sendCampaignActions', campaignAddJSON);
-    // socket.emit('sendCampaignActions', campaignDeleteJSON);
+    // Before sending any actions, submit user credentials
+    socket.emit('sendUserCredentials', userCredentials);
+
+    // When credentials are validated start SYNC sending actions
+    socket.on('userAuth', authRes => {
+        if (authRes) {
+            // socket.emit('sendCampaignActions', campaignAddJSON);
+            // socket.emit('sendCampaignActions', campaignDeleteJSON);
+        } else {
+            console.log('Error authenticating user')
+        }
+    })
 
     socket.on('campaignActionResult', result => {
         console.log(JSON.stringify(result, null, 2))
