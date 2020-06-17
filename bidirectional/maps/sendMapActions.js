@@ -1,5 +1,5 @@
 // JavaScript socket.io code
-
+var fs = require('fs');
 var io = require("socket.io-client");
 var mapAddJSON = require("./jsons/mapClientAdd.json");
 var campaignSubmitJSON = require("../camps/jsons/campaignClientAdd.json");
@@ -10,7 +10,11 @@ var { imageToBytea } = require("../../images/imageToBytea");
 
 
 console.log('Starting connection...');
-var socket = io.connect('http://localhost:8080/sendActions');
+// var socket = io.connect('https://localhost:8080/sendActions', { secure: true, reconnect: true, rejectUnauthorized : false });
+var socket = io('https://localhost:8080/sendActions', {
+    ca: fs.readFileSync('../../selfsigned.crt'),
+    rejectUnauthorized: false
+});
 socket.on('error', function (evData) {
     console.error('Connection Error:', evData);
 });
@@ -27,7 +31,7 @@ socket.on('connected', async function (data) {
     // When credentials are validated start SYNC sending actions
     socket.on('userAuth', authRes => {
         if (authRes) {
-            // socket.emit('sendMapActions', mapAddJSON); //Send ADD map actions
+            socket.emit('sendMapActions', mapAddJSON); //Send ADD map actions
             // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
             // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action}
         } else {

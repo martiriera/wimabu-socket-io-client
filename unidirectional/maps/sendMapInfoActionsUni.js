@@ -9,7 +9,10 @@ var { imageToBytea } = require("../../images/imageToBytea");
 
 
 console.log('Starting connection...');
-var socket = io.connect('http://localhost:8080/sendActions');
+var socket = io('https://localhost:8080/sendActions', {
+    ca: fs.readFileSync('../../selfsigned.crt'),
+    rejectUnauthorized: false
+});
 socket.on('error', function (evData) {
     console.error('Connection Error:', evData);
 });
