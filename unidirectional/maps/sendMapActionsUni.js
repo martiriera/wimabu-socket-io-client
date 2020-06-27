@@ -1,5 +1,5 @@
 // JavaScript socket.io code
-
+var fs = require("fs");
 var io = require("socket.io-client");
 var mapSubmitJSON = require("./jsons/mapClientAddUNI.json");
 // var campaignSubmitJSON = require("./jsons/campaignClientSubmitUNI.json");
