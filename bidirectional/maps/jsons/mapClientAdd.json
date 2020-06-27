@@ -7,8 +7,8 @@
 			"data": {
 				"mapServerId": null,
 				"mapClientId": 1,
-				"mapName": "Barça",
-				"buildingName": "Camp Nou",
+				"mapName": "Kitchen",
+				"buildingName": "Hill House",
 				"floorNumber": 1,
 				"mapImageByteArray": null,
 				"mapCoordinates": [
@@ -37,9 +37,9 @@
 			"data": {
 				"mapServerId": null,
 				"mapClientId": 2,
-				"mapName": "Madrid",
-				"buildingName": "Santiago Bernabeu",
-				"floorNumber": 2,
+				"mapName": "Great Hall",
+				"buildingName": "Hogwarts",
+				"floorNumber": 0,
 				"mapImageByteArray": null,
 				"mapCoordinates": [
 					{
@@ -67,9 +67,9 @@
 			"data": {
 				"mapServerId": null,
 				"mapClientId": 3,
-				"mapName": "Liverpool",
-				"buildingName": "Anfield",
-				"floorNumber": 5,
+				"mapName": "Auditori",
+				"buildingName": "Vèrtex",
+				"floorNumber": 1,
 				"mapImageByteArray": null,
 				"mapCoordinates": [
 					{
