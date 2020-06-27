@@ -32,9 +32,9 @@
                                 "sampleNumber": 1,
                                 "dateInMillis": 1586706900419,
                                 "sampleBS": {
-                                    "networkAddress": "AAAA",
-                                    "l2address": "aaaa",
-                                    "technology": "techA"
+                                    "networkAddress": "185.222.168.70",
+                                    "l2address": "00:1a:2b:8a:02:3c",
+                                    "technology": "WLAN"
                                 }
                             },
                             {
@@ -43,9 +43,9 @@
                                 "sampleNumber": 2,
                                 "dateInMillis": 1586706900419,
                                 "sampleBS": {
-                                    "networkAddress": "AAAA",
-                                    "l2address": "aaaa",
-                                    "technology": "techA"
+                                    "networkAddress": "107.63.92.197",
+                                    "l2address": "00:1a:2b:8a:02:3c",
+                                    "technology": "WLAN"
                                 }
                             }
                         ]
@@ -59,9 +59,9 @@
                                 "sampleNumber": 1,
                                 "dateInMillis": 1586706900419,
                                 "sampleBS": {
-                                    "networkAddress": "AAAA",
-                                    "l2address": "aaaa",
-                                    "technology": "techA"
+                                    "networkAddress": "104.61.120.224",
+                                    "l2address": "00:1a:2b:8a:02:3c",
+                                    "technology": "WLAN"
                                 }
                             },
                             {
@@ -70,9 +70,9 @@
                                 "sampleNumber": 2,
                                 "dateInMillis": 1586706900419,
                                 "sampleBS": {
-                                    "networkAddress": "BBBB",
-                                    "l2address": "bbbb",
-                                    "technology": "techB"
+                                    "networkAddress": "170.95.236.218",
+                                    "l2address": "00:1a:2b:8a:02:3c",
+                                    "technology": "WLAN"
                                 }
                             }
                         ]
@@ -111,9 +111,9 @@
                                 "sampleNumber": 1,
                                 "dateInMillis": 1586706900419,
                                 "sampleBS": {
-                                    "networkAddress": "CCCC",
-                                    "l2address": "cccc",
-                                    "technology": "techC"
+                                    "networkAddress": "172.101.167.164",
+                                    "l2address": "a8:d3:f7:27:98:47",
+                                    "technology": "WLAN"
                                 }
                             },
                             {
@@ -122,9 +122,9 @@
                                 "sampleNumber": 2,
                                 "dateInMillis": 1586706900419,
                                 "sampleBS": {
-                                    "networkAddress": "CCCC",
-                                    "l2address": "cccc",
-                                    "technology": "techC"
+                                    "networkAddress": "224.172.46.32",
+                                    "l2address": "98:01:a7:e8:86:62",
+                                    "technology": "WLAN"
                                 }
                             }
                         ]
@@ -138,9 +138,9 @@
                                 "sampleNumber": 1,
                                 "dateInMillis": 1586706900419,
                                 "sampleBS": {
-                                    "networkAddress": "ZZZZ",
-                                    "l2address": "zzzz",
-                                    "technology": "techZ"
+                                    "networkAddress": "106.197.218.156",
+                                    "l2address": "a8:d3:f7:27:98:47",
+                                    "technology": "WLAN"
                                 }
                             },
                             {
@@ -149,77 +149,9 @@
                                 "sampleNumber": 2,
                                 "dateInMillis": 1586706900419,
                                 "sampleBS": {
-                                    "networkAddress": "YYYY",
-                                    "l2address": "yyyy",
-                                    "technology": "techY"
-                                }
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "clientTID": "333333333",
-            "type": "ADD",
-            "data": {
-                "campaignServerId": null,
-                "campaignClientId": 3,
-                "angle": 30,
-                "initDate": "2020-03-28T19:25:10.713Z",
-                "endDate": "2020-04-28T20:25:10.713Z",
-                "numOfSamples": 3,
-                "timeBetweenSamples": 0.3,
-                "numOfBatches": 2,
-                "timeBetweenBatches": 0.3,
-                "mapServerId": "TO BE FILLED",
-                "coordinateData": {
-                    "x": 5,
-                    "y": 5,
-                    "z": 5,
-                    "pixelX": 0.5,
-                    "pixelY": 0.5
-                },
-                "campaignBatches": [
-                    {
-                        "batchNumber": 1,
-                        "batchSamples": [
-                            {
-                                "value": 10,
-                                "error": 0.10,
-                                "sampleNumber": 2,
-                                "dateInMillis": 1586706900419,
-                                "sampleBS": {
-                                    "networkAddress": "AAAA",
-                                    "l2address": "aaaa",
-                                    "technology": "techA"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "batchNumber": 2,
-                        "batchSamples": [
-                            {
-                                "value": 11,
-                                "error": 0.11,
-                                "sampleNumber": 1,
-                                "dateInMillis": 1586706900419,
-                                "sampleBS": {
-                                    "networkAddress": "FFFF",
-                                    "l2address": "ffff",
-                                    "technology": "techF"
-                                }
-                            },
-                            {
-                                "value": 12,
-                                "error": 0.12,
-                                "sampleNumber": 2,
-                                "dateInMillis": 1586706900419,
-                                "sampleBS": {
-                                    "networkAddress": "FFFF",
-                                    "l2address": "ffff",
-                                    "technology": "techF"
+                                    "networkAddress": "185.222.168.70",
+                                    "l2address": "00:1a:2b:8a:02:3c",
+                                    "technology": "WLAN"
                                 }
                             }
                         ]

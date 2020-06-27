@@ -1,5 +1,5 @@
 // JavaScript socket.io code
-
+var fs = require("fs");
 var io = require("socket.io-client");
 var campaignClientInfo = require("./jsons/campaignClientInfo.json");
 var userCredentials = require("../../userCredentials.json");

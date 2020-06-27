@@ -1,5 +1,5 @@
 // JavaScript socket.io code
-
+var fs = require('fs');
 var io = require("socket.io-client");
 var mapClientInfo = require("./jsons/mapClientInfo.json");
 var userCredentials = require("../../userCredentials.json");

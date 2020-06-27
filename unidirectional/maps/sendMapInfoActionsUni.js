@@ -1,5 +1,5 @@
 // JavaScript socket.io code
-
+var fs = require('fs');
 var io = require("socket.io-client");
 var mapClientInfo = require("./jsons/mapClientInfoUNI.json");
 var forceAddJSON = require("./jsons/mapForceAdd.json");
@@ -33,7 +33,7 @@ socket.on('connected', (data) => {
     })
 
     socket.on('infoActionResult', result => {
-        console.log(JSON.stringify(result, null, 2))
+        console.log(result)
         if (result.type === 'OUTDATED') {
             socket.emit('abort')
             // sendForceUpdate()

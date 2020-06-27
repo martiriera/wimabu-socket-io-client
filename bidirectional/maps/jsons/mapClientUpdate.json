@@ -5,12 +5,26 @@
 			"clientTID": "725892469",
 			"type": "UPDATE",
 			"data": {
-				"mapServerId": "TO BE FILLED",
-				"buildingName": "Benito Villamarín",
-				"floorNumber": 8,
-				"mapName": "Real Betis",
-				"version": "TO BE FILLED (YYYYMMDDHHmmssSS)"
+				"mapServerId": "16905b679d8bec6f80ecd37f4c590aa0a930bb1b92825ff46a27454eb2ac147c",
+				"buildingName": "Vèrtex UPC",
+				"version": "2020062812410563"
 			}
-		}
+		},
+		{
+            "clientTID": 456315879,
+            "type": "INFO",
+            "data": [
+                {
+                    "mapServerId": "896aaed3e0807389148777427d7f6325538b15d762b3944c0e534e7c1223bd82",
+                    "mapClientId": 1,
+                    "version": "2020062713092364"
+                },
+                {
+                    "mapServerId": "9df769c43c8723a982569fc99c23b55ac3127fb6a2dfeee1c672d1758bb34a77",
+                    "mapClientId": 2,
+                    "version": "2020062713092365"
+                }
+            ]
+        }
 	]
 }

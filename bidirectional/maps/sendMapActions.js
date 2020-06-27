@@ -31,7 +31,7 @@ socket.on('connected', async function (data) {
     // When credentials are validated start SYNC sending actions
     socket.on('userAuth', authRes => {
         if (authRes) {
-            socket.emit('sendMapActions', mapAddJSON); //Send ADD map actions
+            // socket.emit('sendMapActions', mapAddJSON); //Send ADD map actions
             // socket.emit('sendMapActions', mapUpdateJSON); //Send an UPDATE map action
             // socket.emit('sendMapActions', mapDeleteJSON); //Send a DELETE map action}
         } else {
@@ -53,6 +53,10 @@ socket.on('connected', async function (data) {
         } else {
             console.log('ROLLBACK') //Rollback client transaction
         }
+    })
+
+    socket.on('infoActionResult', result => {
+        console.log(result)
     })
 
     function sendFin(clientTID) {
